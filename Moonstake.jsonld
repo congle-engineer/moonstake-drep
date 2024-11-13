@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Moonstake"
+    },
+    "motivations": {
+      "@value": "Moonstake is motivated to become a DRep due to our commitment to decentralization and its potential to transform the financial ecosystem. We aim to empower individuals by giving them control over their assets and access to decentralized finance. With our expertise in blockchain and staking services, we are well-equipped to represent user interests while promoting transparency, security, and innovation. Our focus on community engagement and education will help strengthen Moonstake's position and drive the adoption of DeFi solutions. As a DRep, we seek to contribute to a more inclusive, secure, and decentralized financial future."
+    },
+    "objectives": {
+      "@value": "As a DRep for Moonstake, our goal is to promote decentralization, empower users, and enhance access to staking and DeFi services. Moonstake aim to build a transparent, secure community where users control their assets and decisions. By engaging with the community and representing their feedback, we foster trust and participation in Moonstake's ecosystem. We are committed to security, reliability, and exploring innovative technologies to improve user experiences, ultimately making Moonstake's services more accessible and inclusive, driving global adoption."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8pvd7m3359an6dlr3s0x2nz6wu4ct9hd6slqysee2hvzd5cnhsefnyavg526k2phsytm4jryvmz38k99kw02yxcyuwsnhg6ku"
+    },
+    "qualifications": {
+      "@value": "Moonstake is well-qualified to serve as a DRep, with extensive experience in blockchain technology and decentralized finance. As a leading staking and DeFi platform, our team of experts in development, cybersecurity, and community engagement ensures we represent user interests while maintaining transparency and security. We have a proven track record in managing staking services, building partnerships, and fostering trust with our users. Our focus on education and support also helps drive the adoption of decentralized technologies, making us a strong candidate for the DRep role."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Moonstake Website"
+        },
+        "uri": {
+          "@value": "https://moonstake.io/"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Moonstake Website"
+        },
+        "uri": {
+          "@value": "https://moonstake.io/"
+        }
+      }
+    ]
+  }
+}
